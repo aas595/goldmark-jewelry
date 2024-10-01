@@ -1,0 +1,1716 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #gold;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+div.logo{
+    margin: 2px;
+    float: left;
+    width: 100px;
+}
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: #greenyellow;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.featured-products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.column{
+    background-color: gold;
+    color: black;
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    margin: 15px 0 10px;
+    font-size: 24px;
+}
+
+.product p {
+    font-size: 18px;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.contact-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-info h3 {
+    color: #a46e3e;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #a46e3e;
+    text-decoration: none;
+}
+
+.map {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+}
+
+.contact-form button {
+    padding: 12px 15px;
+    background-color: #a46e3e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #804c2a;
+}
+
+
+.product-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.product-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    color: #a46e3e;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #555;
+    margin: 5px 0;
+}
+
+
+You said:
+can you please weite a html and css code for the homepage of GoldMark jwellery website which included login page, contact page, search page, product page and addproduct page
+ChatGPT said:
+ChatGPT
+Certainly! Below is a simple example of HTML and CSS code for the homepage of a fictional "GoldMark Jewelry" website. This code includes links to other pages like Login, Contact, Search, Product, and Add Product.
+
+HTML (index.html)
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldMark Jewelry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>GoldMark Jewelry</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="addproduct.html">Add Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to GoldMark Jewelry</h2>
+            <p>Discover our exquisite collection of fine jewelry.</p>
+            <a href="product.html" class="cta-button">Shop Now</a>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <!-- Example Product -->
+                <div class="product">
+                    <img src="images/product1.jpg" alt="Gold Necklace">
+                    <h3>Gold Necklace</h3>
+                    <p>$299.99</p>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GoldMark Jewelry. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+CSS (styles.css)
+css
+Copy code
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.featured-products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    margin: 15px 0 10px;
+    font-size: 24px;
+}
+
+.product p {
+    font-size: 18px;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+Additional Pages (Placeholders)
+Create similar HTML files for login.html, contact.html, search.html, product.html, and addproduct.html with basic structure and content.
+
+Example for login.html:
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - GoldMark Jewelry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>GoldMark Jewelry</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="addproduct.html">Add Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GoldMark Jewelry. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+You can use this as a foundation and expand it with more features as needed.
+
+You said:
+how to add logo in home page in above code
+ChatGPT said:
+ChatGPT
+Memory updated
+To add a logo to the homepage, you can update the HTML and CSS as follows:
+
+Updated HTML (index.html)
+In the <header> section, replace the h1 tag with an img tag for the logo:
+
+html
+Copy code
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="GoldMark Jewelry Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="addproduct.html">Add Product</a></li>
+        </ul>
+    </nav>
+</header>
+Here, replace "images/logo.png" with the path to your logo image file.
+
+Updated CSS (styles.css)
+Adjust the CSS to style the logo:
+
+css
+Copy code
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+This will display the logo on the left and the navigation menu on the right of the header. Adjust max-width in the CSS if you need a larger or smaller logo.
+
+You said:
+can you please also creat login page for the above website 
+ChatGPT said:
+ChatGPT
+Certainly! Below is the HTML and CSS code for the login page of the GoldMark Jewelry website.
+
+HTML (login.html)
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - GoldMark Jewelry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="GoldMark Jewelry Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="addproduct.html">Add Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="login-container">
+        <h2>Login to GoldMark Jewelry</h2>
+        <form action="#" method="post" class="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GoldMark Jewelry. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+CSS (styles.css)
+Add the following CSS to the existing styles.css file to style the login page:
+
+css
+Copy code
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #333;
+    color: #fff;
+}
+Explanation
+The .login-container class centers the login form on the page and applies padding, background, border, and shadow to give it a polished look.
+The .login-form class styles the form elements, including input fields and the submit button.
+You can further customize this page to match the overall design and branding of your website.
+
+You said:
+
+can you pls creat log in page like this 
+ChatGPT said:
+ChatGPT
+To create a login page similar to the one in the image you provided, you can use the following HTML and CSS. This will create a sleek, mobile-friendly login page with a modern design similar to the one in the image.
+
+HTML (login.html)
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - GoldMark Jewelry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-content">
+            <h1>Hi there!</h1>
+            <p>Welcome to the planet of jewelry shopping. Feel it like home...</p>
+            <a href="#" class="skip-link">Skip to browsing!</a>
+
+            <form action="#" method="post">
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Full Name" required>
+                <input type="password" placeholder="Type Password" required>
+                <input type="password" placeholder="Re-type Password" required>
+                <button type="submit">Sign up</button>
+            </form>
+
+            <p class="login-link">Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
+CSS (styles.css)
+css
+Copy code
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7e7d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.login-content h1 {
+    font-size: 28px;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+.login-content p {
+    font-size: 16px;
+    color: #7a7a7a;
+    margin-bottom: 30px;
+}
+
+.skip-link {
+    font-size: 14px;
+    color: #a46e3e;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    font-size: 14px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #a46e3e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #804c2a;
+}
+
+.login-link {
+    font-size: 14px;
+    color: #7a7a7a;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #a46e3e;
+    text-decoration: none;
+}
+Key Features:
+Colors: The color scheme is based on warm, earthy tones that match the aesthetic of the image.
+Rounded Inputs: The form inputs are rounded with a soft background color, similar to what is seen in the image.
+Minimalist Layout: The layout is clean and focused on mobile usability, ensuring a smooth experience on smaller screens.
+You can replace the placeholder text and links with your actual content and adjust the styling as needed to match the branding of GoldMark Jewelry.
+
+You said:
+can you please creat attractive contact page for same jwellery website with a location 7/5 gulliver street brookvale , NSW sydney Australia. and also include phone no. 0424139700
+ChatGPT said:
+ChatGPT
+Certainly! Below is the HTML and CSS code for an attractive contact page for the GoldMark Jewelry website. This page includes the store's address, phone number, and a contact form.
+
+HTML (contact.html)
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GoldMark Jewelry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="GoldMark Jewelry Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="addproduct.html">Add Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Feel free to reach out using the information below.</p>
+
+        <div class="contact-details">
+            <div class="contact-info">
+                <h3>Our Store Location</h3>
+                <p><strong>Address:</strong> 7/5 Gulliver Street, Brookvale, NSW, Sydney, Australia</p>
+                <p><strong>Phone:</strong> <a href="tel:+61424139700">0424 139 700</a></p>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.3063087316573!2d151.26808417578803!3d-33.76513778068338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12aee09ad75653%3A0x93f50cfe1c60e36d!2s7%2F5%20Gulliver%20St%2C%20Brookvale%20NSW%202100%2C%20Australia!5e0!3m2!1sen!2sus!4v1692613135662!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GoldMark Jewelry. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+CSS (styles.css)
+Add the following CSS to style the contact page:
+
+css
+Copy code
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7e7d3;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-info h3 {
+    color: #a46e3e;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #a46e3e;
+    text-decoration: none;
+}
+
+.map {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+}
+
+.contact-form button {
+    padding: 12px 15px;
+    background-color: #a46e3e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #804c2a;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+Key Features:
+Location Map: The page includes an embedded Google Map centered on the store's location at 7/5 Gulliver Street, Brookvale, NSW, Sydney, Australia.
+Contact Information: The address and phone number are prominently displayed with easy access.
+Contact Form: A simple and clean contact form is included for users to send messages directly.
+This contact page layout is responsive and designed to be both visually appealing and user-friendly.
+
+You said:
+can you also pls creat a product page where there are atleast 10 picture of product with their description. and include prize, size, weight, colour for the description of product
+ChatGPT said:
+ChatGPT
+Certainly! Below is the HTML and CSS code for a product page that displays at least 10 products with their images, descriptions, price, size, weight, and color.
+
+HTML (product.html)
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - GoldMark Jewelry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="GoldMark Jewelry Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="addproduct.html">Add Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="product-container">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Gold Necklace">
+                <h3>Gold Necklace</h3>
+                <p>Price: $500</p>
+                <p>Size: 18 inches</p>
+                <p>Weight: 15g</p>
+                <p>Color: Yellow Gold</p>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Silver Bracelet">
+                <h3>Silver Bracelet</h3>
+                <p>Price: $250</p>
+                <p>Size: 7 inches</p>
+                <p>Weight: 10g</p>
+                <p>Color: Silver</p>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="images/product3.jpg" alt="Diamond Ring">
+                <h3>Diamond Ring</h3>
+                <p>Price: $1500</p>
+                <p>Size: 6</p>
+                <p>Weight: 5g</p>
+                <p>Color: White Gold</p>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="images/product4.jpg" alt="Pearl Earrings">
+                <h3>Pearl Earrings</h3>
+                <p>Price: $300</p>
+                <p>Size: 1 inch</p>
+                <p>Weight: 8g</p>
+                <p>Color: White</p>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="images/product5.jpg" alt="Gold Bangle">
+                <h3>Gold Bangle</h3>
+                <p>Price: $450</p>
+                <p>Size: 2.5 inches</p>
+                <p>Weight: 12g</p>
+                <p>Color: Yellow Gold</p>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="images/product6.jpg" alt="Emerald Pendant">
+                <h3>Emerald Pendant</h3>
+                <p>Price: $800</p>
+                <p>Size: 2 inches</p>
+                <p>Weight: 7g</p>
+                <p>Color: Green</p>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="images/product7.jpg" alt="Ruby Earrings">
+                <h3>Ruby Earrings</h3>
+                <p>Price: $400</p>
+                <p>Size: 1 inch</p>
+                <p>Weight: 9g</p>
+                <p>Color: Red</p>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="images/product8.jpg" alt="Sapphire Bracelet">
+                <h3>Sapphire Bracelet</h3>
+                <p>Price: $600</p>
+                <p>Size: 7 inches</p>
+                <p>Weight: 11g</p>
+                <p>Color: Blue</p>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product-card">
+                <img src="images/product9.jpg" alt="Platinum Ring">
+                <h3>Platinum Ring</h3>
+                <p>Price: $2000</p>
+                <p>Size: 7</p>
+                <p>Weight: 10g</p>
+                <p>Color: Silver</p>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product-card">
+                <img src="images/product10.jpg" alt="Gold Chain">
+                <h3>Gold Chain</h3>
+                <p>Price: $550</p>
+                <p>Size: 20 inches</p>
+                <p>Weight: 18g</p>
+                <p>Color: Yellow Gold</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GoldMark Jewelry. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+CSS (styles.css)
+Add the following CSS to style the product page:
+
+css
+Copy code
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7e7d3;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.product-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    color: #a46e3e;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #555;
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+Key Features:
+Product Grid Layout: The product grid is responsive and adapts to different screen sizes using grid-template-columns. It displays the products in a clean, organized manner.
+Product Cards: Each product is displayed in a card with an image, title, and detailed information such as price, size, weight, and color.
+Hover Effects: You can add hover effects to the product cards (e.g., change the background color or scale up the image) if you wish to enhance the design further.
+This layout is flexible and can easily be extended with more products or customized according to your preferences.
+
+You said:
+can you also please creat team page for the same website where there are atleast 4 picture of our team with name, their position and age and speciality of each team members
+ChatGPT said:
+ChatGPT
+Certainly! Below is the HTML and CSS code for a "Team" page that showcases four team members with their pictures, names, positions, ages, and specialties.
+
+HTML (team.html)
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - GoldMark Jewelry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="GoldMark Jewelry Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="addproduct.html">Add Product</a></li>
+                <li><a href="team.html">Our Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="team-container">
+        <h2>Meet Our Team</h2>
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-card">
+                <img src="images/team1.jpg" alt="Alice Smith">
+                <h3>Alice Smith</h3>
+                <p>Position: Chief Executive Officer</p>
+                <p>Age: 45</p>
+                <p>Specialty: Leadership & Strategy</p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-card">
+                <img src="images/team2.jpg" alt="John Doe">
+                <h3>John Doe</h3>
+                <p>Position: Head of Design</p>
+                <p>Age: 38</p>
+                <p>Specialty: Jewelry Design & Innovation</p>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-card">
+                <img src="images/team3.jpg" alt="Emily Johnson">
+                <h3>Emily Johnson</h3>
+                <p>Position: Marketing Director</p>
+                <p>Age: 34</p>
+                <p>Specialty: Digital Marketing & Branding</p>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="team-card">
+                <img src="images/team4.jpg" alt="Michael Brown">
+                <h3>Michael Brown</h3>
+                <p>Position: Sales Manager</p>
+                <p>Age: 40</p>
+                <p>Specialty: Customer Relations & Sales Strategy</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GoldMark Jewelry. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+CSS (styles.css)
+Add the following CSS to style the team page:
+
+css
+Copy code
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7e7d3;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.team-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.team-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    color: #a46e3e;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    color: #555;
+    margin: 5px 0;
+}
+
+
+.add-product-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.add-product-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.add-product-form .form-group {
+    margin-bottom: 20px;
+}
+
+.add-product-form label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.add-product-form input[type="text"],
+.add-product-form input[type="number"],
+.add-product-form textarea,
+.add-product-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.add-product-form textarea {
+    resize: vertical;
+}
+
+.add-product-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #a46e3e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-product-form button:hover {
+    background-color: #8b5930;
+}
+
+
+.search-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.search-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.search-form input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 12px 20px;
+    background-color: #a46e3e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #8b5930;
+}
+
+.search-results h3 {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-card h4 {
+    color: #a46e3e;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #555;
+    margin: 5px 0;
+}
+.signup-container {
+    margin-top: 20px;
+}
+
+.signup-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background-color: #006f9a;
+}
+.signup-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.signup-container h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.signup-form label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.signup-form button {
+    padding: 10px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+    background-color: #555;
+}
+
+/* Login container for redirect */
+.login-container {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.login-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
